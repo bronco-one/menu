@@ -41,13 +41,4 @@ class Kategorie extends \yii\db\ActiveRecord
             'kategoria_nazwa' => 'Kategoria Nazwa',
         ];
     }
-
-    /**
-     * @inheritdoc
-     * @return KategorieQuery the active query used by this AR class.
-     */
-    public static function find()
-    {
-        return new KategorieQuery(get_called_class());
-    }
 }
