@@ -31,7 +31,7 @@ class MenuKategoriiController extends Controller {
 
 	/*public function actionPotrawyspis($id){
         $potrawy = new Menu;
-		$pr =$potrawy->potrawy($id);
+	$pr =$potrawy->potrawy($id);
         return $this->render('potrawyspis',['pr'=>$pr]);
         }*/
 }
