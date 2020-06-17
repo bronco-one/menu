@@ -5,7 +5,7 @@ use yii\helpers\Html;
 
 <?php foreach($menuKategorie as $kat){ ?>
 <ul>
-
+<li><?php   echo Html::img('img/menu-'.$kat['id_kategorii'].'.resized.jpg') ?></li>
 <li><?php echo Html::a('Kategoria: '.$kat['kategoria_nazwa'],
  Url::to(['menu-kategorii/potrawy','id'=>$kat['id_kategorii']]))?></li>
 
