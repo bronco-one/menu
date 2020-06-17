@@ -41,4 +41,7 @@ class Kategorie extends \yii\db\ActiveRecord
             'kategoria_nazwa' => 'Kategoria Nazwa',
         ];
     }
+    public function getMenu() {
+        return $this->hasMany(Menu::className(), ['kategoria_id'=>'id_kategorii']);
+    }
 }
