@@ -18,8 +18,11 @@ AppAsset::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="path/to/swiper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="<?= Yii::$app->request->baseUrl; ?>/css/swiper.min.css">
+    <link rel="stylesheet" href="<?= Yii::$app->request->baseUrl; ?>/css/autoplay.css">
+    <script src="<?= Yii::$app->request->baseUrl; ?>/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -40,6 +43,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Menu', 'url' => ['/menu-kategorii/index']],
             ['label' => 'O nas', 'url' => ['/o-nas/info']],
             ['label' => 'Lokalizacja', 'url' => ['/lokalizacja/mapa']],
             ['label' => 'Contact', 'url' => ['/site/contact']],

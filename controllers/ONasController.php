@@ -4,11 +4,15 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
+use app\models\Slides;
 
 class ONasController extends Controller {
     
     public function actionInfo() {
-        return $this->render('info');
+        
+        $query = Slides::find();
+        $slides = $query->all();
+        return $this->render('info',['slides'=>$slides]);
     }
     
 }
