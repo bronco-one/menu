@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use yii\web\Controller;
 use app\models\Slides;
+use app\models\PageText;
 
 class ONasController extends Controller {
     
@@ -12,7 +13,9 @@ class ONasController extends Controller {
         
         $query = Slides::find();
         $slides = $query->all();
-        return $this->render('info',['slides'=>$slides]);
+        $query2 = PageText::find()->where(['page'=>'onas']);
+        $text = $query2->all();
+        return $this->render('info',['slides'=>$slides,'text'=>$text]);
     }
     
 }

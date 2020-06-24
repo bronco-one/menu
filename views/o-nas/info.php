@@ -20,6 +20,12 @@ use yii\helpers\Html;
    
     
 </div>
+<div>
+    <?php    foreach ($text as $t) { ?>
+    <p> <?= $t['title'] ?></p>
+    <p> <?= $t['content'] ?></p>
+    <?php } ?>
+</div>
 
 
  <script>
