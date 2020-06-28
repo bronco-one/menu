@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\PageText;
 
 
 class SiteController extends Controller
@@ -62,7 +63,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $home = PageText::find()->where(['page'=>'home'])->all();
+        return $this->render('index',['home'=>$home]);
     }
 
     /**

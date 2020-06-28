@@ -25,8 +25,9 @@ class MenuKategoriiController extends Controller {
         
 
 	public function actionPotrawy($id){
+            $kategoria = Kategorie::find()->where(['id_kategorii'=>$id])->all();
             $potrawy = Menu::find()->where(['kategoria_potrawy'=>$id])->all();
-            return $this->render('potrawy',['potrawy'=>$potrawy]);
+            return $this->render('potrawy',['potrawy'=>$potrawy,'kategoria'=>$kategoria]);
         }
 
 	/*public function actionPotrawyspis($id){

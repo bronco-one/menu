@@ -1,9 +1,12 @@
-<?php/*
+<?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\Url;
 use yii\helpers\ArrayHelper;
-*/?>
+foreach($kategoria as $k){
+$this->title = $k['kategoria_nazwa'];
+}
+?>
 <table class="table">
      <tr>
         <th>Nazwa</th>

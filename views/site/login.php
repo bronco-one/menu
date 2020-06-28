@@ -9,7 +9,7 @@ use \yii\bootstrap\ActiveForm;
 use \yii\bootstrap\Alert;
 
 
-$this->title = 'Login';
+$this->title = 'Logowanie';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">

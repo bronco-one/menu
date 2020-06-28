@@ -1,6 +1,7 @@
 <?php 
 use yii\helpers\Url;
 use yii\helpers\Html;
+$this->title = 'O nas';
 ?>
 
 <div class="swiper-container">

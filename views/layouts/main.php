@@ -36,19 +36,19 @@ AppAsset::register($this);
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'red',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => ''],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Strona Domowa', 'url' => ['/site/index']],
             ['label' => 'Menu', 'url' => ['/menu-kategorii/index']],
             ['label' => 'O nas', 'url' => ['/o-nas/info']],
             ['label' => 'Lokalizacja', 'url' => ['/lokalizacja/mapa']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Kontakt', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
+                ['label' => 'Logowanie', 'url' => ['/site/login']]
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')

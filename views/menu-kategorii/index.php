@@ -1,6 +1,7 @@
 <?php 
 use yii\helpers\Url;
 use yii\helpers\Html;
+$this->title = 'menu';
 ?>
 
 <?php foreach($menuKategorie as $kat){ ?>
