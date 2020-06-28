@@ -36,11 +36,11 @@ AppAsset::register($this);
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'red',
+            'class' => 'menu-y',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => ''],
+        'options' => ['class' => 'menu-btn'],
         'items' => [
             ['label' => 'Strona Domowa', 'url' => ['/site/index']],
             ['label' => 'Menu', 'url' => ['/menu-kategorii/index']],
