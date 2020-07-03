@@ -33,14 +33,14 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => Html::img('@web/img/logo-baszta.png',['alt'=> Yii::$app->name]),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'menu-y',
+            'class' => 'menu-y navbar',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'menu-btn'],
+        'options' => ['class' => 'menu-btn  '],
         'items' => [
             ['label' => 'Strona Domowa', 'url' => ['/site/index']],
             ['label' => 'Menu', 'url' => ['/menu-kategorii/index']],

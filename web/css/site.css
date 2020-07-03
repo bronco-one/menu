@@ -124,17 +124,21 @@ a.desc:after {
 .menu-y{
     background-color: #f0e2d5;
     color:red;
+  
 }
 
 .menu-y a{
     color: #606C38;
+    display: inline-block;
 }
 .menu-y a:hover{
     color: #283618;
 }
 .menu-btn{
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;  
+  font-size: 2.2rem; 
+  display: inline-flex; 
+  float: right;
 }
 .start{
     background-image: url('/img/restaurant.jpg');
@@ -144,4 +148,11 @@ a.desc:after {
     color: #fff;
     border-radius: 5px;
     padding: 30px;
+}
+.content{
+    margin: auto;
+    padding: 10px;
+}
+.kategorie{
+   display: grid; 
 }
