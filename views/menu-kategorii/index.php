@@ -7,9 +7,9 @@ $this->title = 'menu';
 <div class="products-center">
 <?php foreach($menuKategorie as $kat){ ?>
 
-<div class="product">
+<div class="product text-center">
 <div class="img-container">
-<?php   echo Html::img('/img/menu-'.$kat['id_kategorii'].'.resized.jpg',['class'=>'product-img']) ?>
+<?php echo Html::img('/img/menu-'.$kat['id_kategorii'].'.resized.jpg',['class'=>'product-img']) ?>
 </div>
 <h4><?php echo Html::a(' '.$kat['kategoria_nazwa'],
  Url::to(['menu-kategorii/potrawy','id'=>$kat['id_kategorii']]))?></h4>
