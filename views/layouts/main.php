@@ -22,6 +22,7 @@ AppAsset::register($this);
     <link rel="stylesheet" href="<?= Yii::$app->request->baseUrl; ?>/css/swiper.min.css">
     <link rel="stylesheet" href="<?= Yii::$app->request->baseUrl; ?>/css/autoplay.css">
     <script src="<?= Yii::$app->request->baseUrl; ?>/js/swiper.min.js"></script>
+    <script src="https://kit.fontawesome.com/8428b095a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -33,14 +34,14 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('@web/img/logo-baszta.png',['alt'=> Yii::$app->name]),
+        'brandLabel' => Html::img('@web/img/logo-baszta.png',['alt'=> Yii::$app->name,'class'=>'img-fluid']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'menu-y navbar',
+            'class' => 'menu-y navbar navbar-toggler ',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'menu-btn  '],
+        'options' => ['class' => 'menu-btn'],
         'items' => [
             ['label' => 'Strona Domowa', 'url' => ['/site/index']],
             ['label' => 'Menu', 'url' => ['/menu-kategorii/index']],
@@ -78,7 +79,11 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
+        <p class="fb-page" 
+  data-href="https://www.facebook.com/facebook"
+  data-width="380" 
+  data-hide-cover="false"
+  data-show-facepile="false"><i class="fab fa-facebook-square"></i></p>
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
