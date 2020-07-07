@@ -23,8 +23,8 @@ $this->title = 'O nas';
 </div>
 <div>
     <?php    foreach ($text as $t) { ?>
-    <p> <?= $t['title'] ?></p>
-    <p> <?= $t['content'] ?></p>
+    <div class="text-center"> <h3><?= $t['title'] ?></h3></div>
+    <div class="container text-justify"> <?= $t['content'] ?></div>
     <?php } ?>
 </div>
 

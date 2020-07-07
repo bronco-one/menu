@@ -15,9 +15,9 @@ $this->title = 'Restauracja Baszta';
         
     </div>
 
-    <div class="body-content">
+    <div class="body-content ">
 
-        <div class="row ">
+        <div class="row container text-justify">
             <?= $h['content'] ?>
         </div>
 
