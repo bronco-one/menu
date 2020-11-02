@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:ital,wght@1,600&display=swap'); 
-html,
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}html,
 body {
-    height: 100%;
+    height: 100vh;
     background: #F7F4EB;
     font-family: 'Playfair Display', serif;
 }
@@ -14,7 +19,7 @@ body {
 }
 
 .wrap > .container {
-    padding: 70px 15px 20px;
+    padding: 70px 15px 10px;
 }
 
 .footer {
@@ -27,9 +32,21 @@ body {
 
 .jumbotron {
     text-align: center;
-    background: url('/img/restaurant.jpg') center/cover no-repeat;
+    background: url('/img/restaurant.jpg') center/cover no-repeat ;
     background-color: transparent;
+    overflow: hidden;
+    animation-name: scale;
+    animation-duration: 25s;
     
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .jumbotron .btn {
@@ -103,7 +120,7 @@ a.desc:after {
     border: none;
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .nav li > form > button.logout {
         display:block;
         text-align: left;
@@ -123,28 +140,55 @@ a.desc:after {
 }
 .menu-y{
     background-color: #f0e2d5;
-    color:red;
-  
+    color:#38536C;
+    height: 82px;
+    
 }
-
+@media screen and (max-width:1024px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu-y{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    .menu-y a{
+    color: #606C38;
+    display: flex;
+    flex-direction: column;
+    position: relativ;
+    margin: 5px auto;
+    
+}
+}
 .menu-y a{
     color: #606C38;
-    display: inline-block;
+    display: flex;
+    position: absolute;
+    margin: 20px auto;
+    
 }
 .menu-y a:hover{
-    color: #283618;
+    color: #38536C;
+    
+    
+    
 }
 .menu-btn{
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem; 
+  font-size: 1.7rem; 
   display: inline-flex; 
   float: right;
+  
+  
 }
 .start{
     background-image: url('/img/restaurant.jpg');
 }
 .banner{
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.1);
     color: #fff;
     border-radius: 5px;
     padding: 30px;
@@ -158,11 +202,11 @@ a.desc:after {
     padding: 4rem 0;
 }
 .products-center {
-    width: 90vw;
+    width: 90vh;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1024px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
   }
@@ -179,3 +223,10 @@ a.desc:after {
   .product a{
     color: #283618;
   }
+  .img-fluid{
+      margin-top: 0;
+      padding: auto;
+      width: 100%;
+      height: 8vh;
+  }
+

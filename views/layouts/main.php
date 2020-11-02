@@ -37,7 +37,7 @@ AppAsset::register($this);
         'brandLabel' => Html::img('@web/img/logo-baszta.png',['alt'=> Yii::$app->name,'class'=>'img-fluid']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'menu-y navbar navbar-toggler ',
+            'class' => 'menu-y ',
         ],
     ]);
     echo Nav::widget([
