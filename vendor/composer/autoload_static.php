@@ -36,7 +36,6 @@ class ComposerStaticInitbb964556a4d28b1470bafe488894338d
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\bootstrap5\\' => 15,
-            'yii\\bootstrap4\\' => 15,
             'yii\\' => 4,
         ),
         'p' => 
@@ -134,10 +133,6 @@ class ComposerStaticInitbb964556a4d28b1470bafe488894338d
         'yii\\bootstrap5\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap5/src',
-        ),
-        'yii\\bootstrap4\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap4/src',
         ),
         'yii\\' => 
         array (
