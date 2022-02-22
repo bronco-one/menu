@@ -1,53 +1,39 @@
-<?php
+ <?php
+/* @var $this yii\web\View */
 
-/** @var yii\web\View $this */
+use yii\helpers\Url;
+use yii\helpers\Html;
+use Yii;
 
-$this->title = 'My Yii Application';
+$this->title = 'Baszta';
 ?>
-<div class="site-index">
-
-    <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
+ <section class="page-section clearfix">
+     <div class="container">
+         <div class="intro">
+             <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="<?php echo Url::to('@web/img/intro.jpg') ?>" alt="..." />
+             <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                 <h2 class="section-heading mb-4">
+                     <span class="section-heading-upper">Fresh Coffee</span>
+                     <span class="section-heading-lower">Worth Drinking</span>
+                 </h2>
+                 <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                 <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Visit Us Today!</a></div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <section class="page-section cta">
+     <div class="container">
+         <div class="row">
+             <div class="col-xl-9 mx-auto">
+                 <div class="cta-inner bg-faded text-center rounded">
+                     <h2 class="section-heading mb-4">
+                         <span class="section-heading-upper">Our Promise</span>
+                         <span class="section-heading-lower">To You</span>
+                     </h2>
+                     <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
