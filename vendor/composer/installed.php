@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '2.0.45',
-        'version' => '2.0.45.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '2d2bcea09918f4cc6359e504bea59e054db212b1',
         'name' => 'yiisoft/yii2-app-advanced',
         'dev' => true,
     ),
@@ -18,6 +18,15 @@
             'aliases' => array(),
             'reference' => '0bc8d1e30e96183e4f36db9dc79caead300beff4',
             'dev_requirement' => true,
+        ),
+        'bower-asset/bootstrap' => array(
+            'pretty_version' => 'v5.1.3',
+            'version' => '5.1.3.0',
+            'type' => 'bower-asset',
+            'install_path' => __DIR__ . '/../bower-asset/bootstrap',
+            'aliases' => array(),
+            'reference' => '1a6fdfae6be09b09eaced8f0e442ca6f7680a61e',
+            'dev_requirement' => false,
         ),
         'bower-asset/inputmask' => array(
             'pretty_version' => '3.3.11',
@@ -755,12 +764,12 @@
             'dev_requirement' => false,
         ),
         'yiisoft/yii2-app-advanced' => array(
-            'pretty_version' => '2.0.45',
-            'version' => '2.0.45.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '2d2bcea09918f4cc6359e504bea59e054db212b1',
             'dev_requirement' => false,
         ),
         'yiisoft/yii2-bootstrap4' => array(
@@ -770,6 +779,15 @@
             'install_path' => __DIR__ . '/../yiisoft/yii2-bootstrap4',
             'aliases' => array(),
             'reference' => 'e6d0e58f43d3910129d554ac183aac17f65be639',
+            'dev_requirement' => false,
+        ),
+        'yiisoft/yii2-bootstrap5' => array(
+            'pretty_version' => '2.0.2',
+            'version' => '2.0.2.0',
+            'type' => 'yii2-extension',
+            'install_path' => __DIR__ . '/../yiisoft/yii2-bootstrap5',
+            'aliases' => array(),
+            'reference' => '258583d8a61c7a32d7164d9a6dfeb9b9ea0e83fc',
             'dev_requirement' => false,
         ),
         'yiisoft/yii2-composer' => array(
