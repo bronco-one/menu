@@ -36,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'cena',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Menu $model, $key, $index, $column) {
+                'urlCreator' => function ($action, \app\models\Menu $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id_potrawy' => $model->id_potrawy]);
                  }
             ],

@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Slides $model, $key, $index, $column) {
+                'urlCreator' => function ($action, \app\models\Slides $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
             ],
