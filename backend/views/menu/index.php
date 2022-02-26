@@ -4,12 +4,13 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
+use app\models\Kategorie;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\MenuSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Menus';
+$this->title = 'Menu';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="menu-index">
@@ -31,7 +32,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'id_potrawy',
             'nazwa_potrawy',
             'skladniki_potrawy:ntext',
-            'kategoria_potrawy',
+            [
+                'attribute'=>'kategoria_potrawy',
+                'label'=>'Kategorie',
+                'value'=> function($data){
+                    return Kategorie::findOne(['id_kategorii'=>$data->kategoria_potrawy])->kategoria_nazwa;
+                },
+            ],
             'gramatura',
             //'cena',
             [
