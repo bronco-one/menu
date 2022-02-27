@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use app\models\Kategorie;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Menu */
@@ -16,7 +18,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'skladniki_potrawy')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'kategoria_potrawy')->textInput() ?>
+    <?= $form->field($model, 'kategoria_potrawy')->dropDownList(
+        ArrayHelper::map(Kategorie::find()->all(),'id_kategorii','kategoria_nazwa'),['prompt'=>'Wybierz']
+    ) ?>
 
     <?= $form->field($model, 'gramatura')->textInput(['maxlength' => true]) ?>
 
